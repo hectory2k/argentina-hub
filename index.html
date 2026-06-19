@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argentina Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --border: #1e1e2e;
+    --accent: #e8ff47;
+    --done: #2aff8f;
+    --text: #e8e8f0;
+    --muted: #4a4a6a;
+    --muted2: #6a6a8a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    padding: 32px 20px 48px;
+  }
+  .container { max-width: 600px; margin: 0 auto; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--done); background: rgba(42,255,143,0.08);
+    border: 1px solid rgba(42,255,143,0.2); border-radius: 99px;
+    padding: 4px 10px; margin-bottom: 14px;
+  }
+  .badge::before {
+    content: ''; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--done); box-shadow: 0 0 6px rgba(42,255,143,0.8);
+    animation: blink 2s ease infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .title { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; line-height: 1; }
+  .title span { color: var(--accent); }
+  .meta { margin-top: 10px; font-size: 11px; color: var(--muted2); margin-bottom: 16px; }
+  .summary { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 24px; }
+  .sum-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .sum-val { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; color: var(--accent); line-height: 1; }
+  .sum-label { font-size: 9px; color: var(--muted2); letter-spacing: 0.18em; text-transform: uppercase; margin-top: 4px; }
+  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+  .section-title { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; margin-bottom: 12px; color: var(--text); }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  th { text-align: left; color: var(--muted2); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 8px 4px; border-bottom: 1px solid var(--border); }
+  td { padding: 6px 4px; border-bottom: 1px solid var(--border); color: var(--text); }
+  .num { text-align: right; color: var(--accent); font-weight: 500; }
+  code { background: rgba(232,255,71,0.08); padding: 2px 6px; border-radius: 4px; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); }
+  .footnote { margin-top: 20px; font-size: 10px; color: var(--muted); text-align: right; }
+  a { color: var(--done); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="badge">MVP lanzado</div>
+  <div class="title">Argentina<br><span>Hub</span></div>
+  <div class="meta">
+    Datos públicos argentinos, limpios y listos para usar<br>
+    <span style="color:var(--done)">3 datasets · CC-BY · Ley 27.275</span>
+  </div>
+
+  <div class="summary">
+    <div class="sum-box"><div class="sum-val">527</div><div class="sum-label">Departamentos</div></div>
+    <div class="sum-box"><div class="sum-val">3.1M</div><div class="sum-label">Registros Censo</div></div>
+    <div class="sum-box"><div class="sum-val">34K</div><div class="sum-label">Indicadores</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">📊 Datasets disponibles</div>
+    <table>
+      <thead><tr><th>Dataset</th><th>Fuente</th><th>Registros</th></tr></thead>
+      <tbody>
+        <tr><td>dpa</td><td>INDEC</td><td class="num">527</td></tr>
+        <tr><td>censo_poblacion</td><td>INDEC · censoargentino</td><td class="num">1.552.241</td></tr>
+        <tr><td>censo_hogares</td><td>INDEC · censoargentino</td><td class="num">1.127.000</td></tr>
+        <tr><td>censo_viviendas</td><td>INDEC · censoargentino</td><td class="num">510.538</td></tr>
+        <tr><td>indicadores</td><td>BCRA</td><td class="num">34.636</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">⚡ Una línea para empezar</div>
+    <pre style="color:var(--text);font-size:11px;overflow-x:auto;"><code>pip install argentina-hub</code></pre>
+    <pre style="color:var(--text);font-size:11px;overflow-x:auto;margin-top:8px;"><code>from argentina_hub import ArgentinaHub
+hub = ArgentinaHub()
+df = hub.cargar("censo_poblacion")
+print(hub.resumen())</code></pre>
+  </div>
+
+  <div class="footnote">
+    <a href="https://github.com/tuusuario/argentina-hub">GitHub</a> · 
+    <a href="docs/datasets/">Documentación</a> · 
+    Licencia CC-BY
+  </div>
+</div>
+</body>
+</html>

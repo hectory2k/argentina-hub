@@ -1,0 +1,50 @@
+# Entorno virtual
+.venv/
+
+# Variables de entorno (API keys, credenciales)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Datos regenerables (output del pipeline)
+data/staging/
+
+# Editor
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+data/normalized/
+# Entorno virtual
+.venv/
+
+# Variables de entorno (API keys, credenciales)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Datos regenerables (output del pipeline)
+data/staging/
+
+# Editor
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+data/normalized/
