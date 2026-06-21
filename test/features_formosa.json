@@ -1,0 +1,83 @@
+{
+  "Bermejo": {
+    "codigo": "34007",
+    "poblacion_total": 15600,
+    "pct_mujeres": 48.3,
+    "pct_piso_tierra": 34.0,
+    "pct_vivienda_precaria": 1.6,
+    "pct_sin_cobertura": 77.8,
+    "poblacion_sin_cobertura": 12134
+  },
+  "Formosa": {
+    "codigo": "34014",
+    "poblacion_total": 268572,
+    "pct_mujeres": 52.1,
+    "pct_piso_tierra": 2.4,
+    "pct_vivienda_precaria": 15.7,
+    "pct_sin_cobertura": 44.1,
+    "poblacion_sin_cobertura": 118559
+  },
+  "Patiño": {
+    "codigo": "34021",
+    "poblacion_total": 19275,
+    "pct_mujeres": 50.1,
+    "pct_piso_tierra": 8.6,
+    "pct_vivienda_precaria": 3.6,
+    "pct_sin_cobertura": 56.1,
+    "poblacion_sin_cobertura": 10806
+  },
+  "Pilagás": {
+    "codigo": "34028",
+    "poblacion_total": 17017,
+    "pct_mujeres": 50.7,
+    "pct_piso_tierra": 19.8,
+    "pct_vivienda_precaria": 3.9,
+    "pct_sin_cobertura": 71.7,
+    "poblacion_sin_cobertura": 12194
+  },
+  "Pilcomayo": {
+    "codigo": "34035",
+    "poblacion_total": 81600,
+    "pct_mujeres": 49.9,
+    "pct_piso_tierra": 14.3,
+    "pct_vivienda_precaria": 4.1,
+    "pct_sin_cobertura": 66.2,
+    "poblacion_sin_cobertura": 54004
+  },
+  "Pirané": {
+    "codigo": "34042",
+    "poblacion_total": 19089,
+    "pct_mujeres": 50.1,
+    "pct_piso_tierra": 11.9,
+    "pct_vivienda_precaria": 2.2,
+    "pct_sin_cobertura": 63.9,
+    "poblacion_sin_cobertura": 12203
+  },
+  "Ramón Lista": {
+    "codigo": "34049",
+    "poblacion_total": 94116,
+    "pct_mujeres": 51.4,
+    "pct_piso_tierra": 7.9,
+    "pct_vivienda_precaria": 5.5,
+    "pct_sin_cobertura": 61.3,
+    "poblacion_sin_cobertura": 57669
+  },
+  "Matacos": {
+    "codigo": "34056",
+    "poblacion_total": 72560,
+    "pct_mujeres": 50.8,
+    "pct_piso_tierra": 8.7,
+    "pct_vivienda_precaria": 3.9,
+    "pct_sin_cobertura": 63.3,
+    "poblacion_sin_cobertura": 45961
+  },
+  "Laishí": {
+    "codigo": "34063",
+    "poblacion_total": 17678,
+    "pct_mujeres": 50.1,
+    "pct_piso_tierra": 56.4,
+    "pct_vivienda_precaria": 1.4,
+    "pct_sin_cobertura": 84.0,
+    "poblacion_sin_cobertura": 14842
+  }
+}
