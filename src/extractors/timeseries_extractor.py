@@ -128,6 +128,8 @@ class TimeseriesExtractor(BaseExtractor):
         """
         try:
             df = pl.read_csv(path)
+            # Forzar valor a Float64
+            df = df.with_columns(pl.col("valor").cast(pl.Float64, strict=False))
             if "fecha" not in df.columns or "valor" not in df.columns:
                 print(f"⚠️ {path}: falta columna 'fecha' o 'valor'")
                 return None
