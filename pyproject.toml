@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argentinahub"
+version = "1.0.0"
+description = "Capa de datos públicos argentinos curados y reproducibles"
+readme = "README.md"
+license = {text = "AGPL-3.0"}
+authors = [
+    {name = "Héctor Raúl López", email = "beat006@gmail.com"}
+]
+keywords = ["argentina", "open-data", "censo", "bcra", "salud"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "polars",
+    "pandas",
+    "requests",
+    "python-dotenv",
+    "censoargentino",
+]
+
+[project.urls]
+Homepage = "https://github.com/hectory2k/argentina-hub"
+Repository = "https://github.com/hectory2k/argentina-hub"
+Issues = "https://github.com/hectory2k/argentina-hub/issues"
+
+[project.scripts]
+argentina-hub = "argentina_hub.cli:main"
+
+[tool.setuptools]
+packages = ["argentina_hub"]
+package-dir = {"" = "src"}
