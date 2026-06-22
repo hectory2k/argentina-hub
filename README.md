@@ -17,9 +17,6 @@ pip install argentinahub
 
 ## Uso
 
-```markdown
-## Uso
-
 ```python
 from argentina_hub import ArgentinaHub
 hub = ArgentinaHub()
@@ -35,9 +32,6 @@ df = hub.cargar("timeseries")
 
 ## Datasets
 
-```markdown
-## Datasets
-
 | Dataset | Fuente | Registros | Descripción |
 |---|---|---|---|
 | dpa | INDEC | 527 | Provincias y departamentos con códigos INDEC |
@@ -47,7 +41,7 @@ df = hub.cargar("timeseries")
 | indicadores | BCRA | 34,636 | Dólar, inflación, UVA, reservas |
 | timeseries | BCRA + Salud | 35,428 | 8 indicadores BCRA + consultas ambulatorias |
 | datos_sheets | Sheets | 523 | DPA desde planillas públicas |
-```
+
 
 ---
 
