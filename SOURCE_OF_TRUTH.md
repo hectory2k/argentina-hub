@@ -63,8 +63,12 @@ make refresh → todo junto
 
 ## MVP: 3 datasets
 
+## Datasets actuales
+
 | Dataset | Fuente | Extractor |
 |---|---|---|
-| DPA | INDEC (derivado del censo) | `dpa_extractor.py` |
+| DPA | INDEC / Google Sheets | `dpa_extractor.py` / `google_sheets_extractor.py` |
 | Censo 2022 | INDEC vía censoargentino | `censo_extractor.py` |
-| Indicadores | BCRA vía api.estadisticasbcra.com | `indicadores_extractor.py` |
+| Indicadores BCRA | api.estadisticasbcra.com | `indicadores_extractor.py` / `timeseries_extractor.py` |
+| Timeseries | BCRA + Datos Abiertos Salud | `timeseries_extractor.py` |
+| Google Sheets | Planillas públicas | `google_sheets_extractor.py` |

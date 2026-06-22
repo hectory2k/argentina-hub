@@ -25,6 +25,8 @@ src/argentina_hub/ → core.py (API), cli.py
 data/raw/ → snapshots inmutables
 data/staging/ → CSV + metadata.json
 data/normalized/ → Parquet, JSON, DuckDB (nunca editar a mano)
+│   ├── google_sheets_extractor.py  Google Sheets → staging
+│   └── timeseries_extractor.py     BCRA + CSV + Sheets → staging
 
 ## 3. Pipeline
 
@@ -55,6 +57,8 @@ make refresh → todo junto
 4. **Validar:** `validate_{nombre}()` en `validation.py` (no vacío, PK única, FK con DPA si aplica).
 5. **Testear:** `test_extractors.py` + `test_pipeline_logic.py`.
 6. **Documentar:** `docs/datasets/{nombre}.md`.
+| **Timeseries** | BCRA + Datos Abiertos Salud | Series temporales: dólar, inflación, UVA, consultas ambulatorias |
+| **Google Sheets** | Planillas públicas | DPA desde Google Sheets |
 
 ---
 
@@ -106,3 +110,22 @@ No implementado. make refresh manual. Se agregará con 5+ datasets o múltiples 
 
 ❌ Dependencias sin justificación
 
+## Arquitectura de ejecución
+
+### División laptop (Manjaro) / teléfono (Termux)
+
+`censoargentino` requiere `duckdb`, sin wheel para Android/Bionic. Solución: split por dispositivo.
+
+| Dispositivo | Tarea | Fundamento |
+|---|---|---|
+| **Manjaro (i5)** | `censo_extractor.py` → staging/ | `duckdb` wheel Linux x86_64 |
+| **Moto G65 (Termux)** | build, DPA, Indicadores, Modelo_v3_5 | Sin dependencia de duckdb |
+
+### Features demográficas sin duckdb
+
+`feature_engineering.py` en Termux carga `features_patino.json` (precalculado en Manjaro).
+
+### Flujo diario
+
+Manjaro: extract censo → git push
+Moto: git pull → build → modelo_v3_5.py
