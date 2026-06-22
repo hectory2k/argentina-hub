@@ -9,14 +9,20 @@ Inspirado en [Chile Hub](https://github.com/tuusuario/chile-hub).
 
 ## Instalación
 
-` bash
-pip install argentinahub `
+```bash
+pip install argentinahub
+```
+## Uso
 
-
-## USO 
-
+```python
 from argentina_hub import ArgentinaHub
 hub = ArgentinaHub()
+
+print(hub.resumen())
+df = hub.cargar("censo_poblacion")
+df = hub.cargar("dpa", codigo_provincia="02")
+df = hub.cargar("timeseries")
+```
 
 # Ver datasets disponibles
 
@@ -30,14 +36,15 @@ df = hub.cargar("timeseries")
 
 ## Datasets
 
-Dataset	Fuente	Registros	Descripción
-dpa	INDEC (Censo 2022)	527	Provincias y departamentos con códigos INDEC
-censo_poblacion	INDEC (censoargentino)	1,552,241	Sexo, escolaridad, actividad económica
-censo_hogares	INDEC (censoargentino)	1,127,000	Material de pisos, clima educativo
-censo_viviendas	INDEC (censoargentino)	510,538	Tipo de vivienda, ocupación
-indicadores	BCRA	34,636	Dólar, inflación, UVA, reservas
-timeseries	BCRA + Min. Salud	35,428	Series temporales: 8 indicadores BCRA + consultas ambulatorias
-datos_sheets	Google Sheets	523	DPA desde planillas públicas
+| Dataset | Fuente | Registros | Descripción |
+|---|---|---|---|
+| dpa | INDEC | 527 | Provincias y departamentos con códigos INDEC |
+| censo_poblacion | INDEC | 1,552,241 | Sexo, escolaridad, actividad económica |
+| censo_hogares | INDEC | 1,127,000 | Material de pisos, clima educativo |
+| censo_viviendas | INDEC | 510,538 | Tipo de vivienda, ocupación |
+| indicadores | BCRA | 34,636 | Dólar, inflación, UVA, reservas |
+| timeseries | BCRA + Salud | 35,428 | 8 indicadores BCRA + consultas ambulatorias |
+| datos_sheets | Sheets | 523 | DPA desde planillas públicas |
 
 ## Licencia
 
