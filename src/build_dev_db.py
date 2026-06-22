@@ -44,6 +44,26 @@ DATASETS = [
         "pk": None,
         "validator": validate_indicadores,
     },
+    {
+        "name": "datos_sheets",
+        "pk": None,
+        "validator": None,  # Sin validador por ahora
+    },
+    {
+        "name": "timeseries",
+        "pk": None,
+        "validator": validate_indicadores,  # Mismo validador (fecha, valor, indicador)
+    },
+    {
+        "name": "localidades",
+        "pk": "id_localidad",
+        "validator": None,
+    },
+    {
+        "name": "universidades",
+        "pk": "sigla",
+        "validator": None,
+    },
 ]
 
 ROOT = Path(__file__).resolve().parent.parent
