@@ -5,13 +5,19 @@
 
 Capa de datos públicos argentinos curados y reproducibles. Datos del INDEC, BCRA y Ministerio de Salud, consumibles en una línea de código.
 
-Inspirado en [Chile Hub](https://github.com/tuusuario/chile-hub).
+Inspirado en [Chile Hub](https://github.com/cortega26/chile-hub).
 
 ## Instalación
 
 ```bash
 pip install argentinahub
 ```
+
+---
+
+## Uso
+
+```markdown
 ## Uso
 
 ```python
@@ -24,16 +30,12 @@ df = hub.cargar("dpa", codigo_provincia="02")
 df = hub.cargar("timeseries")
 ```
 
-# Ver datasets disponibles
+---
 
-print(hub.resumen())
 
-# Cargar uno
+## Datasets
 
-df = hub.cargar("censo_poblacion")
-df = hub.cargar("dpa", codigo_provincia="02")  # Solo CABA
-df = hub.cargar("timeseries")
-
+```markdown
 ## Datasets
 
 | Dataset | Fuente | Registros | Descripción |
@@ -45,6 +47,9 @@ df = hub.cargar("timeseries")
 | indicadores | BCRA | 34,636 | Dólar, inflación, UVA, reservas |
 | timeseries | BCRA + Salud | 35,428 | 8 indicadores BCRA + consultas ambulatorias |
 | datos_sheets | Sheets | 523 | DPA desde planillas públicas |
+```
+
+---
 
 ## Licencia
 
