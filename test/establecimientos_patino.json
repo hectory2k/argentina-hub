@@ -1,0 +1,578 @@
+[
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD FERMIN BAEZ",
+    "tipologia_nombre": "Con atención médica general por lo menos 3 días de la semana",
+    "localidad_nombre": "VILLA GENERAL MANUEL BELGRANO",
+    "domicilio": "sobre la ruta 86 a 30 km del Hospital General Belgrano",
+    "longitud": null,
+    "latitud": null
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LA DIOSA",
+    "tipologia_nombre": "Con atención médica general por lo menos 3 días de la semana",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "Ruta 28 altura Bañado la Estrella a 40 km de Lomitas",
+    "longitud": null,
+    "latitud": null
+  },
+  {
+    "establecimiento_nombre": "CENTRO INTEGRADOR COMUNITARIO OSVALDO QUIROGA - C.I.C.",
+    "tipologia_nombre": "Con atención médica general por lo menos 3 días de la semana",
+    "localidad_nombre": "SAN MARTIN II",
+    "domicilio": "5 KM del Hospital San Martín II - Colonia Osvaldo Quiroga",
+    "longitud": null,
+    "latitud": null
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL IBARRETA",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "Independencia",
+    "longitud": "-59.8585795",
+    "latitud": "-25.2093818"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL GENERAL MANUEL BELGRANO.",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "VILLA GENERAL MANUEL BELGRANO",
+    "domicilio": "AV. JUAN DOMINGO PERON S/N",
+    "longitud": "-59.0322875976562",
+    "latitud": "-24.9325214586779"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL COMANDANTE FONTANA",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "COMANDANTE FONTANA",
+    "domicilio": "MARCELO TOMAS ROJAS 730",
+    "longitud": "-59.6797943115234",
+    "latitud": "-25.3278904308442"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD HUMBERTO DA PRATTO",
+    "tipologia_nombre": "Con atención médica diaria y con especialidades y/o otras profesiones",
+    "localidad_nombre": "COLONIA ABORÍGEN BARTOLOMÉ DE LAS CASAS",
+    "domicilio": "S/NOMBRE S/N",
+    "longitud": "-59.5706176757812",
+    "latitud": "-25.4011039369117"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD COLONIA MUÑIZ",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LAS LOMITAS",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD EL RECREO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "EL RECREO",
+    "domicilio": "EL RECREO",
+    "longitud": "-59.2953414958901",
+    "latitud": "-25.0305503321086"
+  },
+  {
+    "establecimiento_nombre": "CLINICA DE LA MERCED",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "RIVADAVIA 457",
+    "longitud": "-60.588657",
+    "latitud": "-24.707473"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL LAS LOMITAS",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "AV. ENTRE RIOS Y SAAVEDRA S/N",
+    "longitud": "-60.5933",
+    "latitud": "-24.702085"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL POZO DEL TIGRE",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "POZO DEL TIGRE",
+    "domicilio": "AV. LUIS JORGE FONTANA S/N",
+    "longitud": "-60.322292",
+    "latitud": "-24.902441"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL VILLA GENERAL GUEMES",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "VILLA GENERAL GUEMES",
+    "domicilio": "CTE. FONTANA S/N",
+    "longitud": "-59.4937133789062",
+    "latitud": "-24.7368534847706"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD TRES POZOS",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LAS LOMITAS",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD EL COGOIK",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "VILLA GENERAL MANUEL BELGRANO",
+    "domicilio": "EL COGOIK",
+    "longitud": "-59.026667",
+    "latitud": "-24.938333"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO LA PAZ",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LA LOMITAS",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD SAN MARTIN 1",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "FORTIN CABO 1° LUGONES",
+    "domicilio": "Cabo Primero Lugones",
+    "longitud": "-59.8292427",
+    "latitud": "-24.2880116"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD CHICO DAWAN",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "FORTIN CABO 1° LUGONES",
+    "domicilio": "Cabo Primero Lugones",
+    "longitud": "-59.8292427",
+    "latitud": "-24.2880116"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD  KM 15",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "FORTIN CABO 1° LUGONES",
+    "domicilio": "Cabo Primero Lugones",
+    "longitud": "-59.8292427",
+    "latitud": "-24.2880116"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD POSTA CAMBIO ZALAZAR",
+    "tipologia_nombre": "Con atención médica general por lo menos 3 días de la semana",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "POSTA CAMBIO ZALAZAR",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LA MADRID",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "POSTA CAMBIO ZALAZAR",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL ESTANISLAO DEL CAMPO",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "ESTANISLAO DEL CAMPO",
+    "domicilio": "DR. LAUREANO MARADONA S/N",
+    "longitud": "-60.0897216796875",
+    "latitud": "-25.0495246637654"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL FORTIN CABO PRIMERO LUGONES",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "FORTIN CABO 1° LUGONES",
+    "domicilio": "S/NOMBRE S/N",
+    "longitud": "-59.8370361328125",
+    "latitud": "-24.317065306876"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL SAN MARTIN Nº2",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "SAN MARTIN II",
+    "domicilio": "HIPÓLITO IRIGOYEN Y PJE. ISLA MALVINAS S/N",
+    "longitud": "-59.6585083007812",
+    "latitud": "-24.427145340082"
+  },
+  {
+    "establecimiento_nombre": "HOSPITAL PROVINCIAL SUBTENIENTE PERIN",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "SUBTENIENTE PERIN",
+    "domicilio": "AV. 25 DE MAYO S/N",
+    "longitud": "-60.0141906738281",
+    "latitud": "-25.5263324264645"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD EL CEIBAL",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "FORTIN CABO 1° LUGONES",
+    "domicilio": "Cabo Primero Lugones",
+    "longitud": "-59.8292427",
+    "latitud": "-24.2880116"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD  LA BOMBA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LA LOMITAS",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD PUNTA DEL AGUA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LAS LOMITAS",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD SANTA ROSA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "POSTA CAMBIO ZALAZAR",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD RIACHO DE ORO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "Riacho de Oro",
+    "longitud": "-59.8573494",
+    "latitud": "-25.2150536"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD SANTA CATALINA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "COMANDANTE FONTANA",
+    "domicilio": "Santa Catalina",
+    "longitud": "-59.6819153",
+    "latitud": "-25.3347988"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO QOMPI",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POZO DEL TIGRE",
+    "domicilio": "BARRIO QOMPI",
+    "longitud": "-60.3126239776611",
+    "latitud": "-24.8935216171459"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD FORTIN NUEVO PILCOMAYO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "FORTIN NUEVO PILCOMAYO",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD SAN CAYETANO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "SAN CAYETANO",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO EMISORA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "Bº EMISORA",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LA PANTALLA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LA PANTALLA",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO TRIANGULO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "Bº TRIANGULO",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD FORTIN SOLEDAD",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "FORTIN SOLEDAD",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD EL SIMBOLAR",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "EL SIMBOLAR",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD FORTIN SARGENTO 1 LEYES",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "FORTIN SARGENTO 1° LEYES",
+    "domicilio": "FORTIN 1 LEYES",
+    "longitud": "-59.3804855388589",
+    "latitud": "-24.5393780729338"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD COLONIA SARMIENTO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "COLONIA SARMIENTO",
+    "domicilio": "Colonia Sarmiento",
+    "longitud": "-59.432778",
+    "latitud": "-24.643889"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD UNION ESCUELA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "VILLA GENERAL GUEMES",
+    "domicilio": "UNION ESCUELA",
+    "longitud": "-59.4899368286132",
+    "latitud": "-24.7434015152922"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD  GUADALCAZAR",
+    "tipologia_nombre": "Bajo riesgo con internación simple",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "GUADALCAZAR",
+    "longitud": "-61.0826110839843",
+    "latitud": "-23.7853448059412"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD RIO MUERTO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "RIO MUERTO",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD MEDIA LUNA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "MEDIA LUNA",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LA ESPERANZA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "LA ESPERANZA",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LA ZANJA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "LA ZANJA",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD  BAJO HONDO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "BAJO HONDO",
+    "longitud": "-60.1949501037597",
+    "latitud": "-24.1985912836597"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LA LIBERTAD",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "LA LIBERTAD",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LAKA WICHI",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POZO DEL TIGRE",
+    "domicilio": "LAKA WICHI",
+    "longitud": "-60.3226661682128",
+    "latitud": "-24.885813603098"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LOTE Nº 47",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LOTE Nº 47",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LOTE Nº 42",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LOTE N 42",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD VILLA URQUIZA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POZO DEL TIGRE",
+    "domicilio": "VILLA URQUIZA",
+    "longitud": "-60.3199195861816",
+    "latitud": "-24.8870593753359"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD JUAN G. BAZAN",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "JUAN G. BAZAN",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO SAN LUIS",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "Bº SAN LUIS",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "SALA  COLONIA ABORIGEN CEFERINA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "VILLA GENERAL GUEMES",
+    "domicilio": "COLONIA ABORIGEN",
+    "longitud": "-59.4877052307128",
+    "latitud": "-24.7476107813781"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD AUTOCONSTRUCCION",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "AUTOCONSTRUCCION",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LOTE 27",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LOTE 27",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD CAMPO DEL CIELO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "CAMPO DEL CIELO",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD LAKTASANYA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "LAKTASANYA",
+    "longitud": "-60.6007146835327",
+    "latitud": "-24.7043420872336"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD  EX INTEGRANTES ESCUADRON 17 GN",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "COMANDANTE FONTANA",
+    "domicilio": "ESCUADRÓN 17 GN",
+    "longitud": "-59.6819153",
+    "latitud": "-25.3347988"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARTOLOME DE LAS CASAS",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "COMANDANTE FONTANA",
+    "domicilio": "Bartolomé de las Casas",
+    "longitud": "-59.6819153",
+    "latitud": "-25.3347988"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD SANTA RITA",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "Santa Rita",
+    "longitud": "-59.8573494",
+    "latitud": "-25.2150536"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD SAN CARLOS",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "San Carlos",
+    "longitud": "-59.8573494",
+    "latitud": "-25.2150536"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO SAN MIGUEL",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "Barrio San Miguel",
+    "longitud": "-59.8573494",
+    "latitud": "-25.2150536"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD JUAN BAUTISTA ALBERDI",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "SUBTENIENTE PERIN",
+    "domicilio": "JUAN BAUTISTA ALBERDI",
+    "longitud": "-60.0049209594726",
+    "latitud": "-25.5226146476232"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD EL SOLITARIO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "POSTA CAMBIO ZALAZAR",
+    "domicilio": "EL SOLITARIO",
+    "longitud": "-60.1940918",
+    "latitud": "-24.2083702"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD COLONIA ENSANCHE",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "COLONIA ENSANCHE",
+    "longitud": "-59.87",
+    "latitud": "-25.192018"
+  },
+  {
+    "establecimiento_nombre": "CENTRO DE SALUD BARRIO OBRERO",
+    "tipologia_nombre": "Sin atención médica en forma periódica (menor a 3 veces por semana)",
+    "localidad_nombre": "IBARRETA",
+    "domicilio": "Barrio Obrero",
+    "longitud": "-59.8573493999999",
+    "latitud": "-25.2150536"
+  },
+  {
+    "establecimiento_nombre": "UNIDAD MOVIL PADILLA EVA",
+    "tipologia_nombre": "Sistema de Atención extra hospitalaria",
+    "localidad_nombre": "LAS LOMITAS",
+    "domicilio": "BENJAMIN MATIENZO 348",
+    "longitud": "-60.593477",
+    "latitud": "-24.7074596"
+  },
+  {
+    "establecimiento_nombre": "RESIDENCIA PARA ADULTOS MAYORES - POZO DEL TIGRE",
+    "tipologia_nombre": "Vivienda para personas mayores",
+    "localidad_nombre": "POZO DEL TIGRE",
+    "domicilio": "Antartida Argentina entre Tomas Albarracin y Dr. Aquino",
+    "longitud": null,
+    "latitud": null
+  },
+  {
+    "establecimiento_nombre": "RESIDENCIA PARA ADULTOS MAYORES - SAN FRANCISCO DE ASIS",
+    "tipologia_nombre": "Vivienda para personas mayores",
+    "localidad_nombre": "COMANDANTE FONTANA",
+    "domicilio": "Antartida Argentina S/N - Barrio 8 de Febrero",
+    "longitud": "-59.6783111728028",
+    "latitud": "-25.3209801894175"
+  }
+]
