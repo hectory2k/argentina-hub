@@ -69,6 +69,11 @@ DATASETS = [
         "pk": "establecimiento_id",
         "validator": None,
     },
+    {
+         "name": "arsenico",
+         "pk": "id",
+         "validator": None,
+    },
 ]
 
 ROOT = Path(__file__).resolve().parent.parent
