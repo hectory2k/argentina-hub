@@ -74,6 +74,11 @@ DATASETS = [
          "pk": "id",
          "validator": None,
     },
+    {
+        "name": "dengue",
+        "pk": None,
+        "validator": None,
+    },
 ]
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -97,7 +102,9 @@ def build() -> None:
         print(f"Procesando {name}...")
         # Para datasets del censo, inferir todo como string
         if name.startswith("censo_") or name == "refes":
-            df = pl.read_csv(csv_path, infer_schema_length=0)
+            df = pl.read_csv(csv_path, infer_schema_length=0, truncate_ragged_lines=True)
+        elif name == "dengue":
+            df = pl.read_csv(csv_path, schema_overrides={"cantidad": pl.Int64})
         else:
             df = pl.read_csv(csv_path, schema_overrides={
                 "codigo_provincia": pl.Utf8,
