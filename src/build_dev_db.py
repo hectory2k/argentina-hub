@@ -104,7 +104,8 @@ def build() -> None:
         if name.startswith("censo_") or name == "refes":
             df = pl.read_csv(csv_path, infer_schema_length=0, truncate_ragged_lines=True)
         elif name == "dengue":
-            df = pl.read_csv(csv_path, schema_overrides={"cantidad": pl.Int64})
+            df = pl.read_csv(csv_path, infer_schema_length=0, truncate_ragged_lines=True)
+            df = df.with_columns(pl.col("cantidad").cast(pl.Float64).cast(pl.Int64))
         else:
             df = pl.read_csv(csv_path, schema_overrides={
                 "codigo_provincia": pl.Utf8,
