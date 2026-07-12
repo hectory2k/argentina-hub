@@ -24,7 +24,7 @@
     min-height: 100vh;
     padding: 32px 20px 48px;
   }
-  .container { max-width: 600px; margin: 0 auto; }
+  .container { max-width: 700px; margin: 0 auto; }
   .badge {
     display: inline-flex; align-items: center; gap: 6px;
     font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
@@ -54,38 +54,31 @@
   code { background: rgba(232,255,71,0.08); padding: 2px 6px; border-radius: 4px; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); }
   .footnote { margin-top: 20px; font-size: 10px; color: var(--muted); text-align: right; }
   a { color: var(--done); }
-  .map-container { position: relative; width: 100%; padding-bottom: 56.25%; }
+  .map-container { position: relative; width: 100%; padding-bottom: 56.25%; margin-top: 12px; }
   .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px; }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="badge">MVP lanzado</div>
+  <div class="badge">MVP · 12 datasets</div>
   <div class="title">Argentina<br><span>Hub</span></div>
   <div class="meta">
     Datos públicos argentinos, limpios y listos para usar<br>
-    <span style="color:var(--done)">3 datasets · CC-BY · Ley 27.275</span>
+    <span style="color:var(--done)">12 datasets · CC-BY · Ley 27.275 · DOI Zenodo</span>
   </div>
 
   <div class="summary">
     <div class="sum-box"><div class="sum-val">527</div><div class="sum-label">Departamentos</div></div>
-    <div class="sum-box"><div class="sum-val">3.1M</div><div class="sum-label">Registros Censo</div></div>
-    <div class="sum-box"><div class="sum-val">34K</div><div class="sum-label">Indicadores</div></div>
+    <div class="sum-box"><div class="sum-val">3.1M</div><div class="sum-label">Censo 2022</div></div>
+    <div class="sum-box"><div class="sum-val">77K</div><div class="sum-label">Dengue</div></div>
   </div>
 
   <div class="section">
     <div class="section-title">📊 Datasets disponibles</div>
     <table>
       <thead><tr><th>Dataset</th><th>Fuente</th><th>Registros</th></tr></thead>
-      <tbody>
-        <tr><td>dpa</td><td>INDEC</td><td class="num">527</td></tr>
-        <tr><td>censo_poblacion</td><td>INDEC · censoargentino</td><td class="num">1.552.241</td></tr>
-        <tr><td>censo_hogares</td><td>INDEC · censoargentino</td><td class="num">1.127.000</td></tr>
-        <tr><td>censo_viviendas</td><td>INDEC · censoargentino</td><td class="num">510.538</td></tr>
-        <tr><td>indicadores</td><td>BCRA</td><td class="num">34.636</td></tr>
-        <tr><td>geometrias</td><td>IGN</td><td class="num">529</td></tr>
-        <tr><td>localidades</td><td>Correo Argentino</td><td class="num">23,519</td></tr>
-        <tr><td>universidades</td><td>Argentina (PyPI)</td><td class="num">54</td></tr>
+      <tbody id="datasetsTable">
+        <tr><td colspan="3">Cargando...</td></tr>
       </tbody>
     </table>
   </div>
@@ -108,9 +101,35 @@ print(hub.resumen())</code></pre>
 
   <div class="footnote">
     <a href="https://github.com/hectory2k/argentina-hub">GitHub</a> ·
-<a href="https://github.com/hectory2k/argentina-hub/tree/main/docs/datasets">Documentación</a>
-    Licencia AGPL v3
+    <a href="https://github.com/hectory2k/argentina-hub/tree/main/docs/datasets">Documentación</a> ·
+    <a href="https://doi.org/10.5281/zenodo.20788569">DOI Zenodo</a> ·
+    Licencia CC-BY
   </div>
 </div>
+
+<script>
+const datasets = [
+    {name: "dpa", source: "INDEC", records: "527"},
+    {name: "censo_poblacion", source: "INDEC · censoargentino", records: "1,552,241"},
+    {name: "censo_hogares", source: "INDEC · censoargentino", records: "1,127,000"},
+    {name: "censo_viviendas", source: "INDEC · censoargentino", records: "510,538"},
+    {name: "indicadores", source: "BCRA", records: "34,636"},
+    {name: "timeseries", source: "BCRA + Min. Salud", records: "35,428"},
+    {name: "datos_sheets", source: "Google Sheets", records: "523"},
+    {name: "localidades", source: "Correo Argentino", records: "23,519"},
+    {name: "universidades", source: "Argentina (PyPI)", records: "54"},
+    {name: "refes", source: "REFES 2026", records: "36,074"},
+    {name: "arsenico", source: "Mapa de Arsénico", records: "1,330"},
+    {name: "dengue", source: "SNVS 2.0", records: "77,852"},
+];
+
+const tbody = document.getElementById("datasetsTable");
+tbody.innerHTML = "";
+datasets.forEach(d => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${d.name}</td><td>${d.source}</td><td class="num">${d.records}</td>`;
+    tbody.appendChild(tr);
+});
+</script>
 </body>
 </html>
