@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dengue - Argentina Hub</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.28.0/dist/duckdb-browser-blocking.js"></script>
+<style>
+  body { background: #0a0a0f; color: #e8e8f0; font-family: monospace; padding: 20px; }
+  .container { max-width: 800px; margin: 0 auto; }
+  h1 { color: #e8ff47; }
+  .chart-box { background: #111118; border: 1px solid #1e1e2e; border-radius: 12px; padding: 20px; margin: 20px 0; }
+  canvas { max-height: 300px; }
+</style>
 </head>
 <body>
-$END$
+<div class="container">
+  <h1>🦟 Dengue en Argentina</h1>
+  <p>DuckDB · Sin cloud · 77,852 registros</p>
+
+  <div class="chart-box">
+    <h3>Top 5 provincias</h3>
+    <canvas id="chartProvincias"></canvas>
+  </div>
+
+  <div class="chart-box">
+    <h3>Formosa por departamento</h3>
+    <canvas id="chartFormosa"></canvas>
+  </div>
+
+  <div class="chart-box">
+    <h3>Casos anuales</h3>
+    <canvas id="chartAnual"></canvas>
+  </div>
+</div>
+
+<script type="module">
+import { DuckDBClient } from "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.28.0/dist/duckdb-browser-blocking.js";
+
+const db = new DuckDBClient();
+const conn = db.connect();
+
+// Cargar CSV remoto (subilo a GitHub Pages o a un bucket público)
+const CSV_URL = "https://raw.githubusercontent.com/vigisalud-ai/vigisalud-dengue/main/dengue_historico.csv";
+
+await conn.query(`CREATE TABLE dengue AS SELECT * FROM read_csv('${CSV_URL}', all_varchar=true, header=true)`);
+
+// Top 5 provincias
+const prov = await conn.query(`
+  SELECT provincia_residencia, SUM(CAST(cantidad AS DOUBLE)) as total
+  FROM dengue
+  WHERE provincia_residencia != 'desconocida'
+  GROUP BY provincia_residencia
+  ORDER BY total DESC LIMIT 5
+`);
+const provData = prov.toArray();
+
+new Chart(document.getElementById("chartProvincias"), {
+  type: "bar",
+  data: {
+    labels: provData.map(r => r[0]),
+    datasets: [{ label: "Casos totales", data: provData.map(r => r[1]), backgroundColor: "#e8ff47" }]
+  },
+  options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
+});
+
+// Formosa por departamento
+const form = await conn.query(`
+  SELECT departamento_residencia, SUM(CAST(cantidad AS DOUBLE)) as total
+  FROM dengue
+  WHERE provincia_residencia = 'Formosa'
+  GROUP BY departamento_residencia
+  ORDER BY total DESC LIMIT 5
+`);
+const formData = form.toArray();
+
+new Chart(document.getElementById("chartFormosa"), {
+  type: "bar",
+  data: {
+    labels: formData.map(r => r[0]),
+    datasets: [{ label: "Casos en Formosa", data: formData.map(r => r[1]), backgroundColor: "#2aff8f" }]
+  },
+  options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
+});
+
+// Anual
+const anual = await conn.query(`
+  SELECT anio_min, SUM(CAST(cantidad AS DOUBLE)) as total
+  FROM dengue
+  WHERE anio_min NOT LIKE '%desconocido%'
+  GROUP BY anio_min
+  ORDER BY anio_min
+`);
+const anualData = anual.toArray();
+
+new Chart(document.getElementById("chartAnual"), {
+  type: "line",
+  data: {
+    labels: anualData.map(r => r[0]),
+    datasets: [{ label: "Casos por año", data: anualData.map(r => r[1]), borderColor: "#e8ff47", fill: false }]
+  },
+  options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
+});
+</script>
 </body>
 </html>
