@@ -42,8 +42,7 @@ const db = new DuckDBClient();
 const conn = db.connect();
 
 // Cargar CSV remoto (subilo a GitHub Pages o a un bucket público)
-const CSV_URL = "https://raw.githubusercontent.com/vigisalud-ai/vigisalud-dengue/main/dengue_historico.csv";
-
+const CSV_URL = "https://hectory2k.github.io/argentina-hub/dengue_historico.csv";
 await conn.query(`CREATE TABLE dengue AS SELECT * FROM read_csv('${CSV_URL}', all_varchar=true, header=true)`);
 
 // Top 5 provincias
