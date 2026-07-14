@@ -24,13 +24,13 @@
   </div>
 
   <div class="chart-box">
-    <h3>Formosa por departamento</h3>
-    <canvas id="chartFormosa"></canvas>
+    <h3 id="tituloAnual">Casos anuales — Nacional</h3>
+    <canvas id="chartAnual"></canvas>
   </div>
 
   <div class="chart-box">
-    <h3>Casos anuales</h3>
-    <canvas id="chartAnual"></canvas>
+    <h3 id="tituloFormosa">Formosa por departamento</h3>
+    <canvas id="chartFormosa"></canvas>
   </div>
 </div>
 
@@ -38,6 +38,9 @@
 fetch("data_dengue.json")
   .then(r => r.json())
   .then(data => {
+    document.getElementById("tituloAnual").textContent = `Casos anuales — Nacional (${data.rango_anios})`;
+    document.getElementById("tituloFormosa").textContent = `Formosa por departamento (${data.rango_formosa})`;
+
     new Chart(document.getElementById("chartProvincias"), {
       type: "bar",
       data: {
@@ -47,20 +50,20 @@ fetch("data_dengue.json")
       options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
     });
 
+    new Chart(document.getElementById("chartAnual"), {
+      type: "line",
+      data: {
+        labels: data.anual_nacional.map(d => d.anio_min),
+        datasets: [{ label: "Casos por año", data: data.anual_nacional.map(d => d.total), borderColor: "#e8ff47", fill: false }]
+      },
+      options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
+    });
+
     new Chart(document.getElementById("chartFormosa"), {
       type: "bar",
       data: {
         labels: data.formosa.map(d => d.departamento_residencia),
         datasets: [{ label: "Casos en Formosa", data: data.formosa.map(d => d.total), backgroundColor: "#2aff8f" }]
-      },
-      options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
-    });
-
-    new Chart(document.getElementById("chartAnual"), {
-      type: "line",
-      data: {
-        labels: data.anual.map(d => d.anio_min),
-        datasets: [{ label: "Casos por año", data: data.anual.map(d => d.total), borderColor: "#e8ff47", fill: false }]
       },
       options: { plugins: { legend: { labels: { color: "#e8e8f0" } } }, scales: { x: { ticks: { color: "#6a6a8a" } }, y: { ticks: { color: "#6a6a8a" } } } }
     });
