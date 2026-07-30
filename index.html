@@ -41,7 +41,7 @@
   .title { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; line-height: 1; }
   .title span { color: var(--accent); }
   .meta { margin-top: 10px; font-size: 11px; color: var(--muted2); margin-bottom: 16px; }
-  .summary { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 24px; }
+  .summary { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; margin-bottom: 24px; }
   .sum-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
   .sum-val { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; color: var(--accent); line-height: 1; }
   .sum-label { font-size: 9px; color: var(--muted2); letter-spacing: 0.18em; text-transform: uppercase; margin-top: 4px; }
@@ -60,17 +60,18 @@
 </head>
 <body>
 <div class="container">
-  <div class="badge">MVP · 12 datasets</div>
+  <div class="badge">MVP · 13 datasets</div>
   <div class="title">Argentina<br><span>Hub</span></div>
   <div class="meta">
     Datos públicos argentinos, limpios y listos para usar<br>
-    <span style="color:var(--done)">12 datasets · CC-BY · Ley 27.275 · DOI Zenodo</span>
+    <span style="color:var(--done)">13 datasets · CC-BY · Ley 27.275 · DOI Zenodo</span>
   </div>
 
   <div class="summary">
     <div class="sum-box"><div class="sum-val">527</div><div class="sum-label">Departamentos</div></div>
     <div class="sum-box"><div class="sum-val">3.1M</div><div class="sum-label">Censo 2022</div></div>
     <div class="sum-box"><div class="sum-val">77K</div><div class="sum-label">Dengue</div></div>
+    <div class="sum-box"><div class="sum-val">2.7K</div><div class="sum-label">Argly</div></div>
   </div>
 
   <div class="section">
@@ -90,13 +91,21 @@
     </div>
   </div>
 
-  <div class="section">
+    <div class="section">
     <div class="section-title">⚡ Una línea para empezar</div>
     <pre style="color:var(--text);font-size:11px;overflow-x:auto;"><code>pip install argentinahub</code></pre>
     <pre style="color:var(--text);font-size:11px;overflow-x:auto;margin-top:8px;"><code>from argentina_hub import ArgentinaHub
 hub = ArgentinaHub()
 df = hub.cargar("censo_poblacion")
 print(hub.resumen())</code></pre>
+  </div>
+
+  <div class="section">
+    <div class="section-title">🔗 Datos económicos vía <a href="https://api.argly.com.ar" style="color:var(--accent)">Argly API</a></div>
+    <p style="font-size:11px;color:var(--muted2);">
+      ICL, CER, UVA, UVI, SMVM, IPC, Riesgo País y combustibles por provincia gracias a la API de
+      <a href="https://github.com/William10101995/argly">William López</a>.
+    </p>
   </div>
 
   <div class="footnote">
@@ -121,6 +130,7 @@ const datasets = [
     {name: "refes", source: "REFES 2026", records: "36,074"},
     {name: "arsenico", source: "Mapa de Arsénico", records: "1,330"},
     {name: "dengue", source: "SNVS 2.0", records: "77,852"},
+    {name: "argly", source: "Argly API · William López", records: "2,771"},
 ];
 
 const tbody = document.getElementById("datasetsTable");
