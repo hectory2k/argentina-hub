@@ -41,6 +41,7 @@ df = hub.cargar("timeseries")
 | indicadores | BCRA | 34,636 | Dólar, inflación, UVA, reservas |
 | timeseries | BCRA + Salud | 35,428 | 8 indicadores BCRA + consultas ambulatorias |
 | datos_sheets | Sheets | 523 | DPA desde planillas públicas |
+| argly | Argly API | 2,771 | ICL, CER, UVA, UVI, SMVM, IPC, Riesgo País, combustibles |
 
 
 ---
@@ -54,3 +55,10 @@ Datos: CC-BY 4.0 (Ley 27.275 de Acceso a la Información Pública).
 ## Citar
 
 López, H. R. (2026). Argentina Hub v1.0.0 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20788569
+
+### Datos económicos vía [Argly](https://api.argly.com.ar)
+
+Gracias a la API de [William López](https://github.com/William10101995/argly), Argentina Hub incluye:
+- ICL, CER, UVA, UVI, SMVM, IPC, Riesgo País
+- Combustibles por provincia (2,771 estaciones)
+- Precios promedio por provincia y combustible
